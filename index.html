@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RPP</title>
+    <link type= "text/css" rel = "stylesheet" href = "./css/estilos.css"/>
+    <script src= "./js/funciones.js"></script>
+</head>
+<body>
+    <div class = "spinner" id = "idSpinner" hidden>
+        <img src = "./img/loading_spinner.gif" id = "imgSpinner" class = "image">
+    </div>
+    <div class = "contenedor" id = "contenedorId" hidden>
+        <div class = "divCerrar">
+            <h3>Alta de un auto</h3>
+            <button id = "btnCerrar" class = "opcionRojo">X</button>
+        </div>
+        <input type="hidden" id= "idInput">
+        <br>
+        <label for="fname">Marca</label>
+        <br>
+        <input type= "text" id= "idMarca" class= "sinError" name= "nombre" placeholder="Marca...">
+        <br>
+        <label for="fname">Modelo</label>
+        <br>
+        <input type= "text" id= "idModelo" class= "sinError" name= "nombre" placeholder="Modelo...">
+        <br>
+        <label for="fname">Año</label>
+        <br>
+        <select id="idAño" name="año">
+            <option value="2000">2000</option>
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+            <option value="2003">2003</option>
+            <option value="2004">2004</option>
+            <option value="2005">2005</option>
+            <option value="2006">2006</option>
+            <option value="2007">2007</option>
+            <option value="2008">2008</option>
+            <option value="2009">2009</option>
+            <option value="2010">2010</option>
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+          </select>
+        <br>
+        <div class= "divBotones">
+        <button id = "btnGuardar" class = "opcionAzul">Guardar</button>
+        <button id = "btnCancelar" class = "opcionRojo">Cancelar</button>
+        <br>
+        </div>
+    </div>
+    <div class = "divTitulo">
+        <h2>Lista de autos</h2>
+        <button id = "btnAgregar" class = "opcionAgregar">Agregar</button>
+    </div>
+    <table id= "tabla" >
+        <thread>
+            <tr>
+                <th hidden>ID</th>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Año</th>
+            </tr>
+        </thread>
+        <tbody id = "tCuerpo">
+        </tbody>
+    </table>
+</body>
+</html>
